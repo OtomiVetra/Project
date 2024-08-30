@@ -7,7 +7,7 @@ const Div = styled.div`
 export const App = () => {
 	return (
 		<Div>
-			<i className='fa fa-commenting'></i>
+			<i className='fa fa-eye-slash'></i>
 			<div>123</div>
 		</Div>
 	);
