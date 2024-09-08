@@ -6,17 +6,17 @@ const FooterContainer = ({ className }) => {
 	const [temperature, setTemperature] = useState('');
 	const [weather, setWeather] = useState('');
 
-	useEffect(() => {
-		fetch(
-			'https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&lang=ru&appid=49ed87946dc39d161246d1c64f4da003',
-		)
-			.then((res) => res.json())
-			.then(({ name, main, weather }) => {
-				setCity(name);
-				setTemperature(Math.round(main.temp));
-				setWeather(weather[0].description);
-			});
-	}, []);
+	// useEffect(() => {
+	// 	fetch(
+	// 		'https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&lang=ru&appid=49ed87946dc39d161246d1c64f4da003',
+	// 	)
+	// 		.then((res) => res.json())
+	// 		.then(({ name, main, weather }) => {
+	// 			setCity(name);
+	// 			setTemperature(Math.round(main.temp));
+	// 			setWeather(weather[0].description);
+	// 		});
+	// }, []);
 	return (
 		<div className={className}>
 			<div>

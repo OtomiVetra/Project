@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './components';
 import styled from 'styled-components';
+import { Authorization } from './pages';
 
 const AppColumn = styled.div`
 	display: flex;
@@ -16,16 +17,11 @@ const Content = styled.div`
 	padding: 120px 0;
 `;
 
-const H2 = styled.h2`
-	text-align: center;
-`;
-
 export const Blog = () => {
 	return (
 		<AppColumn>
 			<Header />
 			<Content>
-				<H2>Контент страницы</H2>
 				<Routes>
 					<Route
 						path='/'
@@ -33,7 +29,7 @@ export const Blog = () => {
 					/>
 					<Route
 						path='/login'
-						element={<div>Авторизация</div>}
+						element={<Authorization />}
 					/>
 					<Route
 						path='/register'
