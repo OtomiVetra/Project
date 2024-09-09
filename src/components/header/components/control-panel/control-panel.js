@@ -33,8 +33,6 @@ const ControlPanelContainer = ({ className }) => {
 	const roleId = useSelector(selectUserRole);
 	const login = useSelector(selectUserLogin);
 	const session = useSelector(selectUserSession);
-	console.log('roleId:', roleId); // Проверка значения роли
-	console.log('ROLE.GUEST:', ROLE.GUEST);
 
 	return (
 		<div className={className}>
