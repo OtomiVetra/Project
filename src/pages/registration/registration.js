@@ -49,7 +49,7 @@ const regFormSchema = yup.object().shape({
 		.required('Заполните повтор пароля')
 		.oneOf(
 			[yup.ref('password'), null],
-			'Повтор пароля' + ' не совпадает',
+			'Повтор пароля не совпадает',
 		),
 });
 
