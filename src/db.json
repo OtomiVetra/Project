@@ -105,5 +105,94 @@
       "published_at": "2045-02-30"
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "id": "c6be",
+      "author_id": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registed_at": "2050-09-22",
+        "role_id": 0
+      },
+      "post_id": "001",
+      "published_at": "2037-02-19 12:23",
+      "content": "мой первый коммент"
+    },
+    {
+      "id": "3341",
+      "author_id": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registed_at": "2050-09-22",
+        "role_id": 0
+      },
+      "post_id": "001",
+      "published_at": "2048-10-27 09:09",
+      "content": "мой второй коммент"
+    },
+    {
+      "id": "bde6",
+      "author_id": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registed_at": "2050-09-22",
+        "role_id": 0
+      },
+      "post_id": "001",
+      "published_at": "2057-04-10 01:08",
+      "content": "мой третий коммент"
+    },
+    {
+      "id": "cc74",
+      "author_id": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registed_at": "2050-09-22",
+        "role_id": 0
+      },
+      "post_id": "001",
+      "published_at": "2044-09-20 15:22",
+      "content": "мой четвертый коммент"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "e388",
+      "hash": "0.42982902498374597755059767223428934812545776367188",
+      "user": {
+        "id": {
+          "id": "001",
+          "login": "anton",
+          "password": "qwe123",
+          "registed_at": "2050-09-22",
+          "role_id": 0
+        },
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    },
+    {
+      "id": "6605",
+      "hash": "0.34492496491379287526513053308008238673210144042969",
+      "user": {
+        "id": {
+          "id": "001",
+          "login": "anton",
+          "password": "qwe123",
+          "registed_at": "2050-09-22",
+          "role_id": 0
+        },
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    }
+  ]
 }
