@@ -6,6 +6,7 @@ import {
 	Registration,
 	Post,
 	Users,
+	Main,
 } from './pages';
 import { setUser } from './actions';
 import { useLayoutEffect } from 'react';
@@ -51,10 +52,7 @@ export const Blog = () => {
 			<Header />
 			<Page>
 				<Routes>
-					<Route
-						path='/'
-						element={<div>Главная страница</div>}
-					/>
+					<Route path='/' element={<Main />} />
 					<Route
 						path='/login'
 						element={<Authorization />}
