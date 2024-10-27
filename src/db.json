@@ -270,6 +270,23 @@
         "registeredAt": "2050-09-22",
         "roleId": 0
       }
+    },
+    {
+      "hash": "0.63014112197074756416270702175097540020942687988281",
+      "user": {
+        "id": {
+          "id": "001",
+          "login": "anton",
+          "password": "qwe123",
+          "registed_at": "2050-09-22",
+          "role_id": 0
+        },
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "sP3e8tW"
     }
   ]
 }

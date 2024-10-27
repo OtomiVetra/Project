@@ -1,16 +1,23 @@
 import { transformPost } from '../transformers';
 
-export const getPosts = (page, limit) =>
-	fetch(
-		`http://localhost:3005/posts?_page=${page}&_limit=${limit}`,
+export const getPosts = (
+	searchPhrase = '',
+	page = 1,
+	limit = 10,
+) => {
+	const encodedSearchPhrase =
+		encodeURIComponent(searchPhrase);
+	return fetch(
+		`http://localhost:3005/posts?title_like=${encodedSearchPhrase}&_page=${page}&_limit=${limit}`,
 	)
-		.then((loadedPosts) =>
+		.then((response) =>
 			Promise.all([
-				loadedPosts.json(),
-				loadedPosts.headers.get('Link'),
+				response.json(),
+				response.headers.get('Link'),
 			]),
 		)
-		.then(([loadedPosts, links]) => ({
-			posts: loadedPosts && loadedPosts.map(transformPost),
+		.then(([posts, links]) => ({
+			posts: posts.map(transformPost),
 			links,
 		}));
+};
