@@ -1,8 +1,4 @@
-import {
-	getPost,
-	deleteComment,
-	getComments,
-} from '../api';
+import { getPost, deleteComment } from '../api';
 import { ROLE } from '../constants';
 import { sessions } from '../sessions';
 import { getPostCommentsWithAuthor } from '../utils';

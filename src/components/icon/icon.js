@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const IconContainer = ({
@@ -21,3 +22,8 @@ export const Icon = styled(IconContainer)`
 			inactive ? 'default' : 'pointer'};
 	}
 `;
+
+Icon.propTypes = {
+	id: PropTypes.string.isRequired,
+	inactive: PropTypes.bool,
+};
