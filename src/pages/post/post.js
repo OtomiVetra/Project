@@ -28,12 +28,11 @@ const PostContainer = ({ className }) => {
 	const isEditing = !!useMatch('/post/:id/edit');
 	const isCreating = !!useMatch('/post');
 	const requestServer = useServerRequest();
+	const post = useSelector(selectPost);
 
 	useLayoutEffect(() => {
 		dispatch(RESET_POST_DATA);
 	}, [dispatch, isCreating]);
-
-	const post = useSelector(selectPost);
 
 	useEffect(() => {
 		if (isCreating) {
@@ -66,6 +65,7 @@ const PostContainer = ({ className }) => {
 		) : (
 			<div className={className}>
 				<PostContent post={post} />
+
 				<Comments
 					comments={post.comments}
 					postId={post.id}

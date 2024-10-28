@@ -4,6 +4,7 @@ import { Icon, Button } from '../../../../components';
 import { styled } from 'styled-components';
 import { ROLE } from '../../../../constants';
 import { logout } from '../../../../actions';
+import { checkAccess } from '../../../../utils';
 import {
 	selectUserRole,
 	selectUserLogin,
@@ -33,6 +34,8 @@ const ControlPanelContainer = ({ className }) => {
 		sessionStorage.getItem('userData');
 	};
 
+	const isAdmin = checkAccess([ROLE.ADMIN], roleId);
+
 	return (
 		<div className={className}>
 			<RightAlined>
@@ -57,15 +60,19 @@ const ControlPanelContainer = ({ className }) => {
 					margin='10px 0 0 0'
 					onClick={() => navigate(-1)}
 				/>
-				<Link to='/post'>
-					<Icon
-						id='fa-file-text-o'
-						margin='10px 0 0 16px'
-					/>
-				</Link>
-				<Link to='/users'>
-					<Icon id='fa-users' margin='10px 0 0 16px' />
-				</Link>
+				{isAdmin && (
+					<>
+						<Link to='/post'>
+							<Icon
+								id='fa-file-text-o'
+								margin='10px 0 0 16px'
+							/>
+						</Link>
+						<Link to='/users'>
+							<Icon id='fa-users' margin='10px 0 0 16px' />
+						</Link>
+					</>
+				)}
 			</RightAlined>
 		</div>
 	);

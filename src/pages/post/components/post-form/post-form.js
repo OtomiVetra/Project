@@ -65,6 +65,7 @@ const PostFormContainer = ({
 					<Icon
 						size='21px'
 						id='fa-floppy-o'
+						margin='0 9px 0 0'
 						onClick={onSave}
 					/>
 				}

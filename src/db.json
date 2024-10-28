@@ -12,7 +12,7 @@
       "login": "ivan",
       "password": "qwe123",
       "registed_at": "2034-05-19 17:33",
-      "role_id": 2
+      "role_id": 1
     },
     {
       "id": "6103",
@@ -121,17 +121,39 @@
   ],
   "comments": [
     {
-      "id": "fd10",
-      "author_id": {
-        "id": "001",
-        "login": "anton",
-        "password": "qwe123",
-        "registed_at": "2050-09-22",
-        "role_id": 0
-      },
+      "author_id": "001",
+      "post_id": "003",
+      "published_at": "2038-11-02 01:14",
+      "content": "asdasdasdasd",
+      "id": "4gtxJ9f"
+    },
+    {
+      "author_id": "001",
+      "post_id": "003",
+      "published_at": "2041-11-19 06:50",
+      "content": "asdasdasd",
+      "id": "_-RJdPb"
+    },
+    {
+      "author_id": "001",
       "post_id": "006",
-      "published_at": "2038-06-11 09:16",
-      "content": "ну такое себе"
+      "published_at": "2049-07-05 13:27",
+      "content": "asdasdasd",
+      "id": "siUxZml"
+    },
+    {
+      "author_id": "001",
+      "post_id": "006",
+      "published_at": "2063-12-14 12:52",
+      "content": "asdasdsd",
+      "id": "bjTRoC6"
+    },
+    {
+      "author_id": "001",
+      "post_id": "006",
+      "published_at": "2045-03-29 03:25",
+      "content": "asdasdasd",
+      "id": "ASyy-Aw"
     }
   ],
   "sessions": [
@@ -321,6 +343,17 @@
         "roleId": 0
       },
       "id": "zsrdm8p"
+    },
+    {
+      "hash": "0.47702610085825813968085640226490795612335205078125",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "aJAPg9z"
     }
   ]
 }
